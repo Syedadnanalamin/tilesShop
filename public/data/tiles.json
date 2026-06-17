@@ -1,0 +1,50 @@
+[
+    {
+        "id": "01",
+        "title": "Ceramic Blue Tile",
+        "description": "Premium ceramic tile with blue glaze finish",
+        "image": "/Featured Product/img1.webp",
+        "category": "ceramic",
+        "price": 45.99,
+        "currency": "USD",
+        "dimensions": "60x60 cm",
+        "material": "Ceramic",
+        "inStock": true
+    },
+    {
+        "id": "02",
+        "title": "Marble White Tile",
+        "description": "Luxury marble-look tile for modern interiors",
+        "image": "/Featured Product/img2.webp",
+        "category": "marble",
+        "price": 59.99,
+        "currency": "USD",
+        "dimensions": "80x80 cm",
+        "material": "Porcelain",
+        "inStock": true
+    },
+    {
+        "id": "03",
+        "title": "Stone Grey Tile",
+        "description": "Durable stone-finish tile for indoor and outdoor use",
+        "image": "/Featured Product/img3.webp",
+        "category": "stone",
+        "price": 39.99,
+        "currency": "USD",
+        "dimensions": "60x120 cm",
+        "material": "Stoneware",
+        "inStock": false
+    },
+    {
+        "id": "04",
+        "title": "Wooden Oak Tile",
+        "description": "Wood-look porcelain tile with natural oak texture",
+        "image": "/Featured Product/img4.webp",
+        "category": "wood-look",
+        "price": 49.99,
+        "currency": "USD",
+        "dimensions": "20x120 cm",
+        "material": "Porcelain",
+        "inStock": true
+    }
+]
