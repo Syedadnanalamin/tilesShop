@@ -2,49 +2,77 @@
     {
         "id": "01",
         "title": "Ceramic Blue Tile",
-        "description": "Premium ceramic tile with blue glaze finish",
+        "creator": "Tiles Gallery Studio",
+        "description": "Premium ceramic tile with a rich blue glaze finish, designed to bring elegance and sophistication to modern interiors. Its durable ceramic construction ensures long-lasting performance, while the glossy surface reflects light beautifully, making spaces feel brighter and more spacious. Ideal for kitchens, bathrooms, feature walls, and decorative indoor applications.",
         "image": "/Featured Product/img1.webp",
         "category": "ceramic",
         "price": 45.99,
         "currency": "USD",
         "dimensions": "60x60 cm",
         "material": "Ceramic",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "Blue",
+            "Modern",
+            "Minimalist",
+            "Glossy"
+        ]
     },
     {
         "id": "02",
         "title": "Marble White Tile",
-        "description": "Luxury marble-look tile for modern interiors",
+        "creator": "Tiles Gallery Studio",
+        "description": "Luxury marble-look tile crafted to replicate the timeless beauty of natural white marble. Featuring subtle veining patterns and a polished finish, this tile creates a premium atmosphere in living rooms, hallways, and commercial spaces. It combines the elegance of marble with the strength and easy maintenance of porcelain.",
         "image": "/Featured Product/img2.webp",
         "category": "marble",
         "price": 59.99,
         "currency": "USD",
         "dimensions": "80x80 cm",
         "material": "Porcelain",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "Luxury",
+            "Marble",
+            "White",
+            "Elegant"
+        ]
     },
     {
         "id": "03",
         "title": "Stone Grey Tile",
-        "description": "Durable stone-finish tile for indoor and outdoor use",
+        "creator": "Tiles Gallery Studio",
+        "description": "A durable stone-finish tile inspired by the rugged beauty of natural rock surfaces. Its textured appearance adds depth and character to both indoor and outdoor environments. Resistant to wear and weather conditions, this tile is an excellent choice for patios, walkways, and contemporary living spaces.",
         "image": "/Featured Product/img3.webp",
         "category": "stone",
         "price": 39.99,
         "currency": "USD",
         "dimensions": "60x120 cm",
         "material": "Stoneware",
-        "inStock": false
+        "inStock": false,
+        "tags": [
+            "Stone",
+            "Grey",
+            "Outdoor",
+            "Durable"
+        ]
     },
     {
         "id": "04",
         "title": "Wooden Oak Tile",
-        "description": "Wood-look porcelain tile with natural oak texture",
+        "creator": "Tiles Gallery Studio",
+        "description": "Wood-look porcelain tile featuring the warm texture and grain patterns of natural oak wood. It delivers the beauty of hardwood flooring while providing the durability and water resistance of porcelain. Perfect for bedrooms, living rooms, and commercial interiors seeking a cozy and natural aesthetic.",
         "image": "/Featured Product/img4.webp",
         "category": "wood-look",
         "price": 49.99,
         "currency": "USD",
         "dimensions": "20x120 cm",
         "material": "Porcelain",
-        "inStock": true
+        "inStock": true,
+        "tags": [
+            "Wood",
+            "Oak",
+            "Natural",
+            "Warm"
+        ]
     }
 ]

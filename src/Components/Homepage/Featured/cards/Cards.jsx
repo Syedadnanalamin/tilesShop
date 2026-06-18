@@ -1,5 +1,6 @@
 import { featuredCard } from '@/lib/api';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Cards = ({ cardDetails }) => {
@@ -15,10 +16,14 @@ const Cards = ({ cardDetails }) => {
                 <h2 className="card-title">{cardDetails.title}</h2>
                 <p>{cardDetails.description}</p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">View details</button>
+                    <Link href={`/details/${cardDetails.id}`}>
+                        <button className="btn btn-primary">
+                            View Details
+                        </button>
+                    </Link>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

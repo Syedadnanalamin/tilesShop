@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '@/assets/logo.png'
 import Image from 'next/image';
+import Link from 'next/link';
 const Navbar = () => {
     return (
-        <div className="navbar bg-[#2a3c50] text-white shadow-sm px-7 container mx-auto mt-1 rounded-3xl">
+        <div className="navbar bg-[#2a3c50] text-white shadow-sm px-7 container mx-auto  mt-1 rounded-full ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -12,7 +13,9 @@ const Navbar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li className='hover:text-green-300'><a>Home</a></li>
+                        <li>
+                            <Link href="/">Home</Link>
+                        </li>
                         <li className='hover:text-green-300'>
                             <a>All Tiles</a>
                             <ul className="p-2">
@@ -35,15 +38,11 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li className='hover:text-green-300'><a>Home</a></li>
                     <li>
-                        <details>
-                            <summary className='hover:text-green-300'>All Tiles</summary>
-                            <ul className="p-2 bg-base-100 w-40 z-1">
-                                <li className='hover:text-green-300 text-black'><a>Premium Tiles</a></li>
-                                <li className='hover:text-green-300 text-black'><a>Flagship Tile</a></li>
-                            </ul>
-                        </details>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/alltiles">All Tiles</Link>
                     </li>
                     <li className='hover:text-green-300'><a>My Profile</a></li>
                 </ul>
@@ -51,7 +50,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 <a className="btn btn-accent text-white">Log In</a>
             </div>
-        </div>
+        </div >
     );
 };
 
