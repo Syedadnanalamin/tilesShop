@@ -1,8 +1,23 @@
+'use client'
 import React from 'react';
 import logo from '@/assets/logo.png'
 import Image from 'next/image';
 import Link from 'next/link';
+import { authClient } from "@/lib/auth-client"
 const Navbar = () => {
+
+    const clearSession = async () => {
+        await authClient.signOut();
+
+    }
+
+
+
+    const { data: session } = authClient.useSession();
+
+    const user = session?.user;
+    console.log(user)
+
     return (
         <div className="navbar bg-[#2a3c50] text-white shadow-sm px-7 container mx-auto  mt-1 rounded-full ">
             <div className="navbar-start">
@@ -47,8 +62,18 @@ const Navbar = () => {
                     <li className='hover:text-green-300'><a>My Profile</a></li>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn btn-accent text-white">Log In</a>
+            <div className="navbar-end gap-2">
+                {user ? (
+
+                    <div className='flex gap-2 justify-center items-center'>
+                        <p>Welcome,{user.name}</p>
+                        <button className="btn btn-accent text-white" onClick={() => clearSession()}>Log Out</button>
+                    </div>
+
+                ) : (
+                    <Link href="/login" className="btn btn-accent text-white">Log In</Link>
+                )}
+
             </div>
         </div >
     );

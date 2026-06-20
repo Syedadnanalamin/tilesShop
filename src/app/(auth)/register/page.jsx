@@ -41,6 +41,9 @@ const RegisterPage = () => {
                     <label className="label">Last Name</label>
                     <input type="text" className="input" placeholder="Enter your Last Name" {...register("LastName", { required: "Last Name is required" })} />
                     {errors.LastName && <p className="text-red-500">{errors.LastName.message}</p>}
+                    <label className="label">Profile Url</label>
+                    <input type="text" className="input" placeholder="Enter your profile link" {...register("profile", { required: "Profile link is required" })} />
+                    {errors.profile && <p className="text-red-500">{errors.profile.message}</p>}
                     <label className="label">Email</label>
                     <input type="email" className="input" placeholder="Email" {...register("email", { required: "Email Address is required" })} />
                     {errors.email && <p className="text-red-500">{errors.email.message}</p>}
