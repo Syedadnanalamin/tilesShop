@@ -33,10 +33,7 @@ const Navbar = () => {
                         </li>
                         <li className='hover:text-green-300'>
                             <a>All Tiles</a>
-                            <ul className="p-2">
-                                <li className='hover:text-green-300 text-black'><a>Premium Tiles</a></li>
-                                <li className='hover:text-green-300 text-black'><a>Flagship Tile</a></li>
-                            </ul>
+
                         </li>
                         <li className='hover:text-green-300'><a>My Profile</a></li>
                     </ul>
