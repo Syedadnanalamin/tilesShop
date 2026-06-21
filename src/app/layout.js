@@ -1,4 +1,6 @@
 import "./globals.css";
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 export const metadata = {
   title: "Create Next App",

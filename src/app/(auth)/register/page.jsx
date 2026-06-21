@@ -1,6 +1,7 @@
 'use client'
 
 import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 const RegisterPage = () => {
@@ -51,6 +52,7 @@ const RegisterPage = () => {
                     <input type="password" className="input" placeholder="Password" {...register("password", { required: "Password is required" })} />
                     {errors.password && <p className="text-red-500">{errors.password.message}</p>}
                     <button className="btn btn-neutral mt-4">Register</button>
+                    <p>Already  have a account? <Link href="login" className="text-blue-500">Log In here</Link></p>
                 </fieldset>
             </div>
         </form>
