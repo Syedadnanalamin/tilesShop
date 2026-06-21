@@ -6,7 +6,7 @@ const Featured = async () => {
     const allCardsdetails = await featuredCard();
 
     return (
-        <section className="max-w-7xl mx-auto px-4 lg:px-8 py-12">
+        <section className="max-w-7xl mx-auto w-full px-4 lg:px-8 py-12">
             <h2 className="text-3xl font-bold text-center mb-10">
                 Featured Tiles
             </h2>

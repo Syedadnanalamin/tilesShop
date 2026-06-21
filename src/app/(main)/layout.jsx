@@ -5,7 +5,7 @@ import React from 'react';
 
 const Mainlayout = ({ children }) => {
     return (
-        <div>
+        <div className='w-full mx-auto'>
             <Navbar></Navbar>
             <main>  {children}</main>
             <Footer></Footer>

@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const Banner = () => {
     return (
-        <div className='mt-2'>
-            <div className="card bg-base-100 image-full w-[90%] h-[75vh] mx-auto shadow-sm">
+        <div className='mt-2 w-[90%] mx-auto'>
+            <div className="card bg-base-100 image-full  h-[75vh]  shadow-sm">
                 <figure>
 
                     <Image src={banner} alt='banner' fill ></Image>
